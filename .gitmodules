@@ -1,0 +1,6 @@
+[submodule "dependencies/implot"]
+	path = dependencies/implot
+	url = https://github.com/The-Broker-App/implot.git
+[submodule "dependencies/imgui"]
+	path = dependencies/imgui
+	url = https://github.com/The-Broker-App/imgui.git
