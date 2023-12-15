@@ -17,7 +17,7 @@ if (QTIMGUI_BUILD_IMGUI)
             dependencies/imgui/imstb_textedit.h
             dependencies/imgui/imstb_truetype.h
             )
-    target_include_directories(imgui PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/imgui)
+    target_include_directories(imgui PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/dependencies/imgui)
 endif(QTIMGUI_BUILD_IMGUI)
 
 # implot library: implot is build by default, but you can
@@ -32,7 +32,8 @@ if (QTIMGUI_BUILD_IMPLOT)
             dependencies/implot/implot_items.cpp
             dependencies/implot/implot_demo.cpp
             )
-    target_include_directories(implot PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/imgui)
-    target_include_directories(implot PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/implot)
-    target_link_libraries(implot PRIVATE imgui)
+
+    target_include_directories(implot PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/dependencies/implot)
+    target_link_libraries(implot PUBLIC imgui)
+
 endif(QTIMGUI_BUILD_IMPLOT)
