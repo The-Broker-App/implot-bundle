@@ -1,6 +1,6 @@
 [submodule "dependencies/implot"]
 	path = dependencies/implot
-	url = https://github.com/The-Broker-App/implot.git
+	url = git@github.com:The-Broker-App/implot.git
 	branch = magia-main
 [submodule "dependencies/imgui"]
 	path = dependencies/imgui
